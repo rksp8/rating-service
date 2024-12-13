@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public interface RatingRepository extends JpaRepository<Rating, Long> {
 
-    Optional<Rating> findByPostIdAndAuthor(Long postId, String author);
+    Rating findByPostIdAndAuthor(Long postId, String author);
 
     List<Rating> findByPostId(Long postId);
 
